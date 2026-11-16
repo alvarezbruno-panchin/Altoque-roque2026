@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
     --color-stone:#594d46;
     --color-espresso:#40241a;
@@ -446,4 +447,454 @@ footer{
 #cantidad{
     font-size:24px;
     font-weight:bold;
+=======
+:root{
+    --color-stone:#594d46;
+    --color-espresso:#40241a;
+    --color-light:#E1E1E1;
+    --color-brown:#5C4033;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+    background: var(--color-light);
+    background-image:
+    radial-gradient(var(--color-stone) 1px, transparent 1px);
+    background-size:20px 20px;
+}
+
+.login-body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--color-light) 0%, var(--color-stone) 55%, var(--color-espresso) 100%);
+    background-image: radial-gradient(circle at top, rgba(225,225,225,0.55), transparent 40%), linear-gradient(135deg, var(--color-light) 0%, var(--color-stone) 55%, var(--color-espresso) 100%);
+}
+
+.login-shell {
+    width: min(100%, 460px);
+    padding: 20px;
+}
+
+.login-card {
+    background: rgba(225,225,225,0.94);
+    border: 2px solid var(--color-stone);
+    border-radius: 24px;
+    box-shadow: 0 20px 45px rgba(64,36,26,0.22);
+    padding: 32px 28px;
+    backdrop-filter: blur(2px);
+}
+
+.login-brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--color-espresso), var(--color-brown));
+    color: var(--color-light);
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 10px 18px rgba(64,36,26,0.25);
+}
+
+.eyebrow {
+    margin: 0 0 6px;
+    color: var(--color-brown);
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-brand h1 {
+    margin: 0;
+    color: var(--color-espresso);
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+}
+
+.login-text {
+    margin: 0 0 24px;
+    color: var(--color-stone);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn-google,
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-google {
+    background: linear-gradient(135deg, var(--color-espresso) 0%, var(--color-brown) 100%);
+    color: var(--color-light);
+    box-shadow: 0 10px 18px rgba(64,36,26,0.25);
+}
+
+.btn-google:hover,
+.btn-logout:hover {
+    transform: translateY(-2px);
+}
+
+.google-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(225,225,225,0.15);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn-logout {
+    background: var(--color-light);
+    color: var(--color-espresso);
+    border: 1px solid rgba(89,77,70,0.35);
+}
+
+.usuario {
+    min-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-brown);
+}
+
+/* HEADER */
+
+header{
+    background: linear-gradient(
+        90deg,
+        var(--color-espresso),
+        var(--color-brown)
+    );
+
+    color:var(--color-light);
+    padding:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:5px solid var(--color-stone);
+}
+
+header h1{
+    font-size:2rem;
+    text-shadow:2px 2px 4px rgba(64,36,26,0.55);
+}
+
+.marca{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex:none;
+}
+
+.logo-marca{
+    position:relative;
+    width:54px;
+    height:54px;
+    overflow:hidden;
+    flex:none;
+    border-radius:50%;
+    background:var(--color-light);
+}
+
+.logo-marca img{
+    position:absolute;
+    top:-27px;
+    left:-27px;
+    width:108px;
+    height:108px;
+    max-width:none;
+}
+
+@media (max-width:600px){
+    .logo-marca{
+        width:44px;
+        height:44px;
+    }
+
+    .logo-marca img{
+        top:-22px;
+        left:-22px;
+        width:88px;
+        height:88px;
+    }
+
+    .marca h1{
+        font-size:1.5rem;
+    }
+}
+
+ul{
+    display:flex;
+    gap:25px;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:var(--color-light);
+}
+
+/* PRODUCTOS */
+
+#boxproductos{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+    padding:30px;
+}
+
+#boxproducto,
+.boxproducto{
+    background:var(--color-light);
+    border:3px solid var(--color-stone);
+    border-radius:15px;
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+    box-shadow: 0 4px 8px rgba(64,36,26,0.2);
+}
+
+#boxproducto:hover,
+.boxproducto:hover{
+    transform:translateY(-5px);
+}
+
+#boxproducto img,
+.boxproducto img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.nombre{
+    color:var(--color-espresso);
+    margin-bottom:10px;
+}
+
+.detalle{
+    margin:10px 0;
+}
+
+.precio{
+    color:var(--color-brown);
+    font-size:1.5rem;
+    margin:10px 0;
+}
+
+.stock{
+    color:var(--color-stone);
+    margin-bottom:10px;
+}
+
+.btndetalle,
+#btndetalle,
+.btn-eliminar,
+.btn-seguir,
+.btn-finalizar {
+    background:var(--color-espresso);
+    color:var(--color-light);
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btndetalle:hover,
+#btndetalle:hover,
+.btn-eliminar:hover,
+.btn-seguir:hover,
+.btn-finalizar:hover{
+    background:var(--color-brown);
+}
+
+.carrito-link {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    position:relative;
+    background: rgba(225,225,225,0.15);
+    padding:8px 12px;
+    border-radius:999px;
+}
+
+.carrito-icon {
+    font-size:1.5rem;
+    line-height:1;
+}
+
+.contador-carrito {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:22px;
+    height:22px;
+    padding:0 6px;
+    border-radius:50%;
+    background:var(--color-light);
+    color:var(--color-espresso);
+    font-size:0.8rem;
+    font-weight:bold;
+}
+
+/* CARRITO */
+
+.carrito-contenedor{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px 40px;
+}
+
+.carrito-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.carrito-header h2 {
+    color:var(--color-espresso);
+}
+
+.tabla-carrito{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--color-light);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(64,36,26,0.18);
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+    padding:14px 12px;
+    border-bottom:1px solid rgba(89,77,70,0.35);
+    text-align:center;
+    vertical-align:middle;
+}
+
+.tabla-carrito thead {
+    background:var(--color-brown);
+    color:var(--color-light);
+}
+
+.img-carrito {
+    width:65px;
+    height:65px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.btn-eliminar {
+    padding:8px 12px;
+}
+
+.fila-total {
+    background:var(--color-stone);
+    color:var(--color-light);
+    font-size:1.05rem;
+}
+
+.carrito-acciones {
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+.btn-finalizar {
+    min-width:220px;
+}
+
+.btn-finalizar:disabled {
+    opacity:0.6;
+    cursor:not-allowed;
+}
+
+.carrito-vacio {
+    text-align:center;
+    padding:20px;
+    color:var(--color-stone);
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--color-espresso);
+    color:var(--color-light);
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+.cantidad{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin:15px 0;
+}
+
+.cantidad button{
+    width:40px;
+    height:40px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+#cantidad{
+    font-size:24px;
+    font-weight:bold;
+>>>>>>> aa3701591d18c928a9eaca6ac800b5079eb7362d
 }
