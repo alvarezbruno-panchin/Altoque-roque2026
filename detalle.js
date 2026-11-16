@@ -1,4 +1,4 @@
-import { db } from "./firebase-config.js";
+﻿import { db } from "./firebase-config.js";
 import { resolverImagen } from "./imagenes.js";
 import { descontarStock, liberarCarritoAnterior } from "./stock.js";
 
